@@ -1,0 +1,328 @@
+.hero-1 {
+    padding: 210px 0 0;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+
+    @include breakpoint (max-xl){
+        padding: 170px 0 100px;
+    }
+
+    @include breakpoint (max-lg){
+        padding: 170px 0 80px;
+    }
+
+    // &::before {
+    //     @include before;
+    //     background-color: $bg-color;
+    //     z-index: -1;
+    //     top: 65%;
+    // }
+
+    .hero-content {
+        position: relative;
+
+        .color-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+        }
+
+        p {
+            font-size: 27px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-left: 320px;
+            margin-bottom: 10px;
+
+            @include breakpoint (max-lg){
+                margin-left: 0;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 24px;
+            }
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 140px;
+
+            @include breakpoint (max-xxl){
+                font-size: 120px;
+            }
+
+            @include breakpoint (max-xl){
+                font-size: 100px;
+            }
+
+            @include breakpoint (max-lg){
+               line-height: 120%;
+               text-align: center;
+               font-size: 80px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 60px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 40px;
+            }
+
+            img {
+                @include breakpoint (max-lg){
+                   display: none;
+                }
+            }
+
+            .text {
+                font-size: 24px;
+                font-weight: 700;
+                color: #CDCDCD;
+                line-height: 134%;
+            }
+
+            b {
+                color: $theme-color;
+                margin-left: 280px;
+
+                @include breakpoint (max-xxl){
+                    margin-left: 0;
+                }
+            }
+
+            .text-2 {
+                font-weight: 400;
+                font-family: $heading-font-2;
+            }
+        }
+    }
+
+    .hero-image {
+        margin-top: 150px;
+        height: 320px;
+
+        @include breakpoint (max-xl){
+           margin-left: 0;
+           margin-top: 80px;
+        }
+
+        @include breakpoint (max-xl){
+            margin-top: 50px;
+            height: 150px;
+        }
+
+        @include breakpoint (max-sm){
+            height: 80px;
+        }
+
+        img {
+            @include imgw;
+        }
+    }
+}
+
+.hero-2 {
+    padding: 200px 0 200px;
+
+    .hero-content {
+        position: relative;
+        z-index: 9;
+
+        @include breakpoint (max-md){
+           text-align: center;
+        }
+        
+        h1 {
+            font-size: 80px;
+            line-height: 113%;
+            font-weight: 700;
+
+            @include breakpoint (max-xl){
+                font-size: 70px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 52px;
+            }
+
+            @include breakpoint (max-sm){
+               font-size: 40px;
+            }
+
+            span {
+                font-family: $heading-font-2;
+                font-weight: 400;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            color: $white;
+            line-height: 142%;
+            margin-top: 25px;
+
+            @include breakpoint (max-xl){
+                font-size: 22px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 20px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 18px;
+            }
+        }
+
+        .theme-btn {
+            margin-top: 40px;
+            border: 1px solid $white;
+            background-color: transparent;
+            color: $white;
+
+            &::before,&::after {
+                background-color: $white;
+            }
+
+            &:hover {
+                color: $header-color;
+            }
+        }
+    }
+
+    .hero-image {
+        position: relative;
+
+        @include breakpoint (max-xxl){
+            img {
+                @include imgw;
+            }
+        }
+
+        .circle-shape {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            @include breakpoint (max-xxl){
+                display: none;
+            }
+        }
+    }
+}
+
+.hero-3 {
+    padding: 160px 0 160px;
+    overflow: hidden;
+
+    .hero-content {
+        text-align: center;
+
+        @include breakpoint (max-xl){
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 80px;
+            font-weight: 700;
+
+            @include breakpoint (max-lg){
+                font-size: 70px;
+            }
+
+            @include breakpoint (max-md){
+               font-size: 55px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 40px;
+            }
+
+            span {
+                font-weight: 400;
+                font-family: $body-font;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            max-width: 525px;
+            line-height: 142%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            @include breakpoint (max-lg){
+                font-size: 20px;
+            }
+
+            @include breakpoint (max-md){
+               font-size: 20px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 18px;
+            }
+        }
+
+        .hero-button {
+            margin-top: 50px;
+
+            @include breakpoint (max-md){
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .hero-image-items {
+        @include flex;
+        margin-bottom: -200px;
+
+        @include breakpoint (max-xl){
+            margin-bottom: -80px;
+            gap: 30px;
+        }
+
+        @include breakpoint (max-md){
+          gap: 0;
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 9;
+            margin-top: 150px;
+
+            @include breakpoint (max-xl){
+                margin-top: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            img {
+                @include imgw;
+                border-radius: 15px;
+            }
+
+            &.style-2 {
+                transform: rotate(-10.802deg);
+                margin-bottom: -40px;
+
+                @include breakpoint (max-xl){
+                    margin-bottom: 0;
+                }
+            }
+
+            &.style-3 {
+                transform: rotate(11.846deg);
+                margin-bottom: -40px;
+                z-index: 1;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

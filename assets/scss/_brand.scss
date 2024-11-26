@@ -1,0 +1,55 @@
+.brand-title-2 {
+    margin-bottom: 50px;
+    position: relative;
+    margin-top: -6px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5C6972;
+    z-index: 9;
+
+    &::before {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        content: "";
+        height: 1px;
+        width: 460px;
+        background-color: #E0E1E5;
+        z-index: -1;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        content: "";
+        height: 1px;
+        width: 460px;
+        background-color: #E0E1E5;
+        z-index: -1;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    &.style-2 {
+        color: $white;
+
+        &::before {
+            background-color: $white;
+        }
+    
+        &::after {
+            background-color: $white;
+        }
+    }
+}
+
+.brand-image {
+    opacity: .5;
+}

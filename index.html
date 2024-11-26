@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--<< Header Area >>-->
+
+    <head>
+
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Captiva Ai">
+        <meta name="description" content="Captiva AI specializes in Odoo ERP solutions, custom Web and Mobile Apps Design & Development, and AI solutions to automate business processes, enhance user experiences, and drive growth.">
+        <meta name="keywords" content="Odoo, UX Design, UI Design, Odoo Implementation, Odoo Customization, Odoo Consulting, Odoo Support, Web Design, Web Development, Mobile Design, Mobile App Development, AI Solutions, AI Development, AI Consulting, Odoo ERP Implementation Services, Odoo Customization for Small Businesses, Odoo Consulting for Startups, Odoo Support and Maintenance, Responsive Web Design, Custom Web Development, Mobile App Development for iOS and Android, AI-Powered Solutions, Machine Learning Solutions, AI Consulting Services">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="Captiva AI - Odoo ERP, Web & Mobile Apps Development, and AI Solutions" />
+        <meta property="og:description" content="Captiva AI specializes in Odoo ERP solutions, custom Web and Mobile Apps Design & Development, and AI solutions to automate business processes, enhance user experiences, and drive growth." />
+        <meta property="og:image" content="assets/img/og-image.png" />
+        <meta property="og:url" content="https://captiva-ai.com" />
+        <meta property="og:type" content="website" />
+
+        <!-- ======== Page title ============ -->
+        <title>Captiva AI - Odoo ERP, Web & Mobile Apps Development, and AI Solutions</title>
+
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+        <!--<< All Min Css >>-->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+
+        <!--<< Color.css >>-->
+        <link rel="stylesheet" href="assets/css/color.css">
+
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- Structured Data for Organization -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Captiva",
+          "url": "https://captiva-ai.com",
+          "logo": "https://captiva-ai.com/assets/img/logo.png",
+          "sameAs": [
+            "https://facebook.com/yourprofile",
+            "https://twitter.com/yourprofile",
+            "https://linkedin.com/yourprofile"
+          ]
+        }
+        </script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Q9F3DF7QL"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2Q9F3DF7QL');
+        </script>
+
+    </head>
+    <body class="body-bg">
+
+         <!-- Preloader Start -->
+         <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="a" class="letters-loading">
+                        a
+                    </span>
+                    <span data-text-preloader="p" class="letters-loading">
+                        p
+                    </span>
+                    <span data-text-preloader="t" class="letters-loading">
+                        t
+                    </span>
+                    <span data-text-preloader="i" class="letters-loading">
+                        i
+                    </span>
+                    <span data-text-preloader="v" class="letters-loading">
+                        v
+                    </span>
+                    <span data-text-preloader="a" class="letters-loading">
+                        a
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<< Mouse Cursor Start >>-->  
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text d-none d-xl-block">
+                            Captiva AI: Your Partner for Innovative Digital Solutions. We specialize in crafting cutting-edge websites, mobile apps, AI-powered systems, and Odoo ERP solutions.
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">B2401, Wing C, 1st floor, Smart Village,
+                                            Giza, Egypt.
+                                            </a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:info@example.com"><span class="mailto:contact@captiva-ai.com">contact@captiva-ai.com</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Sunday-Thursday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+201285837327">+20 128 583 7327, </a>
+                                        <a href="tel:+201284065814">+20 128 406 5814</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header-button mt-4">
+                                <a href="contact.html" class="theme-btn text-center">
+                                    Get A Quote
+                                </a>
+                            </div>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-x"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li>
+                                                <a class="active" href="index.html">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="service.html">Our Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio.html">Our Portfolio</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="header__hamburger d-xl-block my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Hero Sction Start -->
+        <section class="hero-secton hero-1 bg-cover" style="background-image: url('assets/img/hero/hero-bg-3.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hero-content">
+                            <div class="color-bg">
+                                <img src="assets/img/hero/color-bg.png" alt="img">
+                            </div>
+                            <p class="wow fadeInUp">Intelligent Solution</p>
+                            <h1 class="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                                Captiva <img src="assets/img/hero/radius-img.png" alt="img">
+                               <b>AI</b> <span class="text-2">solutions</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image img-custom-anim-left bg-cover" style="background-image: url('assets/img/hero/hero-1.png');">
+            </div>
+        </section>
+        
+        <!-- About  Sction Start -->
+        <section class="about-section section-padding section-bg fix">
+            <div class="bg-shape">
+                <img src="assets/img/about/bg-shape.png" alt="shape-img">
+            </div>
+            <div class="color-bg">
+                <img src="assets/img/about/color-bg-shape.png" alt="img">
+            </div>
+            <div class="color-bg-2">
+                <img src="assets/img/about/color-bg-shape-2.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="section-title ml-200">
+                    <h6 class="wow fadeInUp">
+                        <img src="assets/img/star.png" alt="img"> Who we are
+                    </h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        The Future of Business <br>
+                        <span>Powered <b>AI</b> solutions</span>
+                    </h2>
+                </div>
+                <div class="about-wrapper mt-4 mt-md-0">
+                    <ul class="nav">
+                        <li class="nav-item wow fadeInUp" data-wow-delay=".3s">
+                            <a href="#Mission" data-bs-toggle="tab" class="nav-link">
+                                Our Mission
+                            </a>
+                        </li>
+                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s">
+                            <a href="#Vision" data-bs-toggle="tab" class="nav-link active">
+                                Our Vision
+                            </a>
+                        </li>
+                        <li class="nav-item wow fadeInUp" data-wow-delay=".5s">
+                            <a href="#Feature" data-bs-toggle="tab" class="nav-link">
+                                Key Feature
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="Mission" class="tab-pane fade">
+                            <div class="about-items">
+                                <div class="about-content">
+                                    <p>
+                                        To empower businesses through innovative technology solutions. We strive to deliver exceptional digital experiences that drive growth and success.
+                                    </p>
+                                    <ul class="list-items">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Innovative Solutions.</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Expert Development.</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Customer Focus.</span>
+                                        </li>
+                                    </ul>
+                                    <a href="about.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                                </div>
+                                <div class="about-image">
+                                    <img src="assets/img/about/01.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Vision" class="tab-pane fade show active">
+                            <div class="about-items">
+                                <div class="about-content">
+                                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                                        To be the leading provider of cutting-edge digital solutions, shaping the future of technology and transforming industries.
+                                    </p>
+                                    <ul class="list-items wow fadeInUp" data-wow-delay=".5s">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Leading Innovation.</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Creative Solutions.</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Positive Impact.</span>
+                                        </li>
+                                    </ul>
+                                    <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                                </div>
+                                <div class="about-image wow fadeInUp" data-wow-delay=".3s">
+                                    <img src="assets/img/about/01.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Feature" class="tab-pane fade">
+                            <div class="about-items">
+                                <div class="about-content">
+                                    <p>
+                                        We deliver exceptional digital solutions tailored to your unique business needs. Our key features include:
+                                    </p>
+                                    <ul class="list-items">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Expert Development Teams.</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Innovative AI Solutions.</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                                                <path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/>
+                                                <path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14ZM11.7259 7.06667C11.3909 7.06667 11.1675 6.93333 10.9442 6.66667C10.4975 6.13333 10.4975 5.33333 10.9442 4.8L14.5178 0.4C14.9645 -0.133333 15.6345 -0.133333 16.0812 0.4C16.5279 0.933333 16.5279 1.73333 16.0812 2.26667L12.5076 6.66667C12.2843 6.93333 12.0609 7.06667 11.7259 7.06667Z" fill="#EFFB53"/>
+                                              </svg>
+        
+                                             <span>Seamless User Experiences.</span>
+                                        </li>
+                                    </ul>
+                                    <a href="about.html" class="theme-btn">explore now <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                                </div>
+                                <div class="about-image">
+                                    <img src="assets/img/about/01.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-section section-padding pb-0">
+                <div class="container">
+                    <div class="counter-wrapper">
+                        <div class="counter-items wow fadeInUp" data-wow-delay=".3s">
+                            <div class="icon">
+                                <img src="assets/img/icon/01.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">100</span>+</h2>
+                                <p>Successful Launches</p>
+                            </div>
+                        </div>
+                        <div class="counter-items wow fadeInUp" data-wow-delay=".5s">
+                            <div class="icon">
+                                <img src="assets/img/icon/01.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">20</span>+</h2>
+                                <p>Industries Served</p>
+                            </div>
+                        </div>
+                        <div class="counter-items wow fadeInUp" data-wow-delay=".7s">
+                            <div class="icon">
+                                <img src="assets/img/icon/01.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">300</span>+</h2>
+                                <p>Innovative Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Sction Start -->
+        <section class="service-section fix section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="wow fadeInUp">
+                        <img src="assets/img/star.png" alt="img">
+                        popular services
+                    </h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Your Trusted Partner <br>
+                        <span>for <b>digital</b> transformation</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="service-box-items mb-0">
+                            <div class="service-image">
+                                <img src="assets/img/service/04.jpg" alt="img">
+                            </div>
+                            <div class="service-content">
+                                <h3>
+                                    Odoo ERP Expertise
+                                </h3>
+                                <p>
+                                    End-to-end Odoo services, from seamless implementation and tailored customization to expert consulting, reliable hosting, and ongoing support.
+                                </p>
+                                <a href="services/odoo.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="service-box-items">
+                            <div class="service-image">
+                                <img src="assets/img/service/01.jpg" alt="img">
+                            </div>
+                            <div class="service-content">
+                                <h3>
+                                    Web Design & Development
+                                </h3>
+                                <p>
+                                    Design and develop responsive, user-focused websites that captivate audiences, enhance engagement, and drive measurable business results.
+                                </p>
+                                <a href="services/web-devlopment.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="service-box-items">
+                            <div class="service-image">
+                                <img src="assets/img/service/02.jpg" alt="img">
+                            </div>
+                            <div class="service-content">
+                                <h3>
+                                    Mobile App Design & Development
+                                </h3>
+                                <p>
+                                    Create sleek, user-friendly mobile apps for iOS and Android that deliver high performance and an exceptional user experience.
+                                </p>
+                                <a href="services/mobile-development.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="service-box-items">
+                            <div class="service-image">
+                                <img src="assets/img/service/03.jpg" alt="img">
+                            </div>
+                            <div class="service-content">
+                                <h3>
+                                    AI & Machine Learning Solutions
+                                </h3>
+                                <p>
+                                    Leverage cutting-edge AI to automate workflows, enhance operational efficiency, and enable intelligent, data-driven decisions.
+                                </p>
+                                <a href="/services/ai-ml.html" class="link-btn">more details <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Sction Start -->
+        <section class="project-section fix section-padding section-bg bg-cover" style="background-image: url('assets/img/project/line-shape.png');">
+            <div class="color-bg">
+                <img src="assets/img/project/color-bg.png" alt="img">
+            </div>
+            <div class="project-wrapper">
+                <h2 class="project-title text-center wow fadeInUp" data-wow-delay=".3s">
+                    Selected <br> <img src="assets/img/has.png" alt="img"> <span>Clients</span>
+                </h2>
+                <div class="brand-section">
+                    <div class="container">
+                        <div class="swiper brand-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-01.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-02.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-03.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-04.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-05.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-06.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-07.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-22.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-08.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-09.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-10.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-11.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-12.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-13.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-14.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-15.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-16.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-17.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-18.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-19.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-20.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-image text-center">
+                                        <img src="assets/img/brand/logo-21.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faq Sction Start -->
+        <section class="faq-section fix section-padding">
+            <div class="color-bg">
+                <img src="assets/img/faq/color-bg.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="faq-wrapper">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="faq-image-items">
+                                <div class="faq-image wow fadeInUp" data-wow-delay=".3s">
+                                    <img src="assets/img/faq/01.jpg" alt="img">
+                                </div>
+                                <div class="faq-image wow fadeInUp" data-wow-delay=".5s">
+                                    <img src="assets/img/faq/02.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="faq-content">
+                                <div class="section-title">
+                                    <h6>
+                                        <img src="assets/img/star.png" alt="img"> key feature
+                                    </h6>
+                                    <h2>
+                                        Harnessing AI for
+                                        <span><b>business</b> success</span>
+                                    </h2>
+                                </div>
+                                <div class="faq-accordion">
+                                    <div class="accordion" id="accordion">
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".2s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                                    Automated Decision-Making for Real-Time Insights
+                                                </button>
+                                            </h5>
+                                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    AI-driven analytics help businesses make quick, data-backed decisions by processing vast amounts of information, revealing trends, and generating insights in real time. This enables faster response to market changes and competitive advantages.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item  wow fadeInUp" data-wow-delay=".4s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                                    Enhanced Customer Experience through Personalization
+                                                </button>
+                                            </h5>
+                                            <div id="faq1" class="accordion-collapse show" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    By leveraging AI algorithms, companies can analyze customer data to create highly personalized experiences. From tailored recommendations to targeted marketing, AI enables a unique experience for every customer, boosting loyalty and satisfaction.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".6s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                                    Operational Efficiency through Automation
+                                                </button>
+                                            </h5>
+                                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    AI optimizes workflows by automating routine tasks, reducing errors, and freeing up human resources for higher-value activities. This streamlines operations across finance, HR, supply chain, and more, leading to cost savings and productivity gains.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay=".8s">
+                                            <h5 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                                    Predictive Analytics for Strategic Forecasting
+                                                </button>
+                                            </h5>
+                                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    AI’s predictive modeling capabilities help businesses anticipate market shifts, customer demands, and inventory needs. This strategic foresight allows organizations to make proactive decisions, optimize resources, and plan for sustainable growth.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paralax Sction Start -->
+        <div class="paralax-section fix">
+            <div class="paralax-image">
+                <img src="assets/img/paralax-bg.jpg" alt="img">
+            </div>
+        </div>
+
+       
+
+        <!-- Message Sction Start -->
+        <section class="message-section fix section-bg section-padding dark-bg-section">
+            <div class="bg-shape">
+                <!-- <img src="assets/img/about/bg-shape.png" alt="shape-img"> -->
+                 <video src="assets/img/blob-loop.mp4" loop muted autoplay></video>
+            </div>
+            <div class="container">
+                <div class="message-items">
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Have any query
+                       <span> send us <b>message</b></span>
+                    </h2>
+                    <!-- <div class="circle-bg wow fadeInUp" data-wow-delay=".3s">
+                        <img src="assets/img/circle-bg.png" alt="img">
+                    </div> -->
+                    <div class="lets-talk-items wow fadeInUp" data-wow-delay=".5s">
+                        <a href="contact.html" class="lets-circle">
+                            <i class="fa-sharp fa-regular fa-arrow-up-right"></i> <br>
+                            Let’s talk
+                        </a>
+                        <p>
+                            Have a query or need assistance? Just send us a message, and our team will get back to you in no time. Let’s make things easier together!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Sction Start -->
+        <footer class="footer-section footer-bg">
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-wrapper">
+                        <div class="logo-img wow fadeInUp" data-wow-delay=".3s">
+                           <a href="index.html">
+                                <img src="assets/img/logo/white-logo.svg" alt="img">
+                           </a>
+                        </div>
+                        <p class="wow fadeInUp" data-wow-delay=".5s">Captiva-AI © 2025. All Rights Reserved.</p>
+                        <div class="social-icon wow fadeInUp" data-wow-delay=".7s">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-x"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Viewport Js >>-->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Waypoints Js >>-->
+        <script src="assets/js/jquery.waypoints.js"></script>
+        <!--<< Counterup Js >>-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
