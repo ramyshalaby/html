@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /
+
+# Allow specific pages
+Allow: /index.html
+Allow: /service.html
+Allow: /portfolio.html
+Allow: /contact.html
+Allow: /about.html
+Allow: /services/web-development.html
+Allow: /services/odoo.html
+Allow: /services/mobile-development.html
+Allow: /services/ai-ml.html
+
+# Specify the Sitemap location
+Sitemap: https://captiva-ai.com/sitemap.xml

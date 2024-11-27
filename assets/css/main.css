@@ -1378,6 +1378,7 @@ span {
   background: #222226;
   text-align: center;
   padding: 40px;
+  height: 100%;
 }
 .contact-box-items-4 .icon {
   width: 80px;
@@ -5629,9 +5630,9 @@ input.main-search-input::placeholder {
   padding: 40px 40px;
   display: block;
   text-align: center;
-  top: -120px;
+  bottom: -120px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   opacity: 0;
   visibility: hidden;
 }
@@ -5656,7 +5657,7 @@ input.main-search-input::placeholder {
 .portfolio-card-items:hover .portfolio-image .lets-circle {
   opacity: 1;
   visibility: visible;
-  top: 50%;
+  bottom: 20px;
 }
 
 .portfolio-section .nav {
@@ -5785,6 +5786,9 @@ input.main-search-input::placeholder {
 @media (max-width: 991px) {
   .section-padding {
     padding: 80px 0;
+  }
+  .message-section .bg-shape{
+    width:90%;
   }
 }
 
@@ -6511,4 +6515,8 @@ input.main-search-input::placeholder {
 .contact-wrapper #error {
   background: red;
   color: #fff;
+}
+
+.section-title.text-center .row {
+  justify-content: stretch;
 }
