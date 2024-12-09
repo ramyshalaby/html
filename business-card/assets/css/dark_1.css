@@ -1,0 +1,40 @@
+:root {
+    --white: #2c2c2c;
+    --black: #fff;
+    --gray: #191919;
+}
+.primary-button {
+    background-color: var(--black);
+}
+.exchange-data-button {
+    color: var(--gray);
+}
+.title, .bio {
+    color: #a5a5a5;
+}
+.mobile-option-3 .inner-links .link {
+    background-color: var(--gray);
+}
+.inner-links .highlighted-links a p {
+    color: #B2B2B2;
+}
+.links a svg path {
+    fill: var(--black);
+    stroke: var(--black);
+}
+.links svg path:first-child {
+    fill: var(--gray);
+    stroke: var(--gray);
+}
+.links svg path:last-child {
+    fill: var(--black);
+    stroke: var(--black);
+}
+
+.mobile-preview {
+    background-color: var(--black);
+}
+.contact-input input,
+.contact-input textarea {
+  color: var(--white);
+}
