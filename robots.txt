@@ -11,6 +11,7 @@ Allow: /services/web-development.html
 Allow: /services/odoo.html
 Allow: /services/mobile-development.html
 Allow: /services/ai-ml.html
+Allow: /sitemap.xml
 
 # Specify the Sitemap location
 Sitemap: https://captiva-ai.com/sitemap.xml
