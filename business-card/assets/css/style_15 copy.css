@@ -48,14 +48,14 @@ ul {
   list-style: none;
 }
 main {
-  background: var(--black);
+  background: var(--gray);
 }
 .mobile {
   padding: 25px;
   max-width: 390px;
   min-height: 100vh;
   margin: auto;
-  background: #1e1e1e;
+  background: var(--white);
   position: relative;
 }
 .images {
@@ -111,7 +111,7 @@ main {
   object-fit: cover;
 }
 .images .profile-img {
-  border: solid 4px #3a3a3a;
+  border: solid 4px var(--white);
   border-radius: 50%;
   position: absolute;
   inset-inline-start: 50%;
@@ -122,7 +122,7 @@ main {
 }
 .name {
   text-align: center;
-  color: var(--white);
+  color: var(--black);
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
@@ -155,7 +155,8 @@ main {
   width: 52px;
   border-radius: 200px;
   padding: 12px;
-  background: #3a3a3a;
+  background: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,7 +165,7 @@ main {
   margin-block-end: 16px;
 }
 .save-contact button, .save-contact a {
-  background-color: #3a3a3a;
+  background-color: var(--black);
   color: var(--white);
   font-size: 17px;
   font-weight: 500;
@@ -181,7 +182,7 @@ main {
 }
 .my-links {
   padding: 30px 26px;
-  background-color: #3a3a3a;
+  background-color: var(--gray);
   border-radius: 25px;
   width: 100%;
 }
@@ -279,7 +280,7 @@ main {
   border-radius: 50%;
 }
 .inner-links .link span {
-  color: var(--white);
+  color: var(--black);
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -1138,5 +1139,5 @@ input[type=number] {
   cursor: pointer;
 }
 .links .link svg {
-    color: var(--white);
+    color: #fff;
 }
