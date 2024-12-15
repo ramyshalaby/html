@@ -2,7 +2,7 @@ User-agent: *
 Disallow: /
 
 # Allow specific pages
-Allow: /index.html
+Allow: //
 Allow: /service.html
 Allow: /portfolio.html
 Allow: /contact.html
