@@ -305,8 +305,7 @@
                         <div class="col-lg-8">
                             <div class="contact-form-items-area">
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">Get in touch</h2>
-                                <form id="contact" action="http://147.182.179.215:8069/contact/submit" method="POST" name="contact" class="contact-form-items">
-                                                <input type="hidden" name="csrf_token" value=""/>
+                                <form id="contact" name="contact" class="contact-form-items">
                                     <div class="row g-4">
                                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                             <div class="form-clt">
@@ -493,6 +492,44 @@
         <script src="assets/js/contact.form.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
+
+        <!-- Add jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- AJAX Submission Script -->
+        <script>
+          $('#contact').submit(function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const data = {
+              name: $('#name').val(),
+              phone: $('#phone').val(),
+              email: $('#email').val(),
+              subject: $('#subject').val(),
+              message: $('#message').val()
+            };
+
+            $.ajax({
+              url: 'http://147.182.179.215/contact/submit', // Odoo endpoint
+              type: 'POST',
+              data: JSON.stringify(data),
+              contentType: 'application/json',
+              success: function(response) {
+                if (response.success) {
+                  $('#success').show();
+                  $('#error').hide();
+                } else {
+                  $('#error').show();
+                  $('#success').hide();
+                }
+              },
+              error: function() {
+                $('#error').show();
+                $('#success').hide();
+              }
+            });
+          });
+        </script>
     </body>
 </html>
 
