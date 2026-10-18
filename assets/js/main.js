@@ -354,12 +354,45 @@ CSS TABLE OF CONTENTS
 
 
     function loader() {
-        $(window).on('load', function() {
+        // Hide on DOM ready instead of window load, so heavy images/video don't hold the preloader
+        $(function() {
             // Animate loader off screen
-            $(".preloader").addClass('loaded');                    
-            $(".preloader").delay(600).fadeOut();                       
+            $(".preloader").addClass('loaded');
+            $(".preloader").delay(600).fadeOut();
         });
     }
+
+    //>> Lazy Background Video: download + play only when near the viewport <<//
+    function lazyVideo() {
+        var videos = document.querySelectorAll('video.lazy-video');
+        if (!videos.length) {
+            return;
+        }
+        function play(video) {
+            var p = video.play();
+            if (p && p.catch) {
+                p.catch(function() {});
+            }
+        }
+        if (!('IntersectionObserver' in window)) {
+            Array.prototype.forEach.call(videos, play);
+            return;
+        }
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    play(entry.target);
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }, { rootMargin: '300px 0px' });
+        Array.prototype.forEach.call(videos, function(video) {
+            observer.observe(video);
+        });
+    }
+
+    lazyVideo();
 
     loader();
    
