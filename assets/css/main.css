@@ -167,7 +167,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, h1.as-h2 {
   font-family: "Satoshi Variable", sans-serif;
   margin: 0px;
   padding: 0;
@@ -182,28 +182,28 @@ h1 {
   line-height: 95%;
 }
 
-h2 {
+h2, h1.as-h2 {
   font-size: 65px;
   line-height: 116%;
   font-weight: 700;
 }
 @media (max-width: 991px) {
-  h2 {
+  h2, h1.as-h2 {
     font-size: 55px;
   }
 }
 @media (max-width: 767px) {
-  h2 {
+  h2, h1.as-h2 {
     font-size: 45px;
   }
 }
 @media (max-width: 575px) {
-  h2 {
+  h2, h1.as-h2 {
     font-size: 36px;
   }
 }
 @media (max-width: 470px) {
-  h2 {
+  h2, h1.as-h2 {
     font-size: 30px;
   }
 }
@@ -5728,11 +5728,11 @@ input.main-search-input::placeholder {
   line-height: 1;
   margin-bottom: 15px;
 }
-.section-title h2 span {
+.section-title h2 span, .section-title h1.as-h2 span {
   font-weight: 400;
   font-family: "Marcellus", sans-serif;
 }
-.section-title h2 b {
+.section-title h2 b, .section-title h1.as-h2 b {
   color: var(--theme);
   font-weight: 400;
   font-family: "Marcellus", sans-serif;
